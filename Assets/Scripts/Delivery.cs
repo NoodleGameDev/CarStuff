@@ -18,6 +18,7 @@ public class Delivery : MonoBehaviour
         {
             Debug.Log("Package picked up!");
             hasPackage = true;
+            Destroy(other.gameObject);
         }
         else if (other.tag == "Customer" && hasPackage)
         {
